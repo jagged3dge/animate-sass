@@ -1,164 +1,164 @@
 /////////////////////////////////////////////////////////
-// Animation Default Settings                          //
+// Animation Default Sett-ings                          //
 /////////////////////////////////////////////////////////
 
 
-// Base module settings
-$base-duration					: 1s !default;           // used in 1-base module
-$base-origin 					: top center !default;
-$base-degrees 					: 30deg !default;        // used in lightspeed & special modules
-$base-fill-mode					: both !default;
-$base-iteration-count			: infinite !default;
+// Base module sett-ings
+$base-duration               : 1s !default; // used in 1-base module
+$base-origin                 : top center !default;
+$base-degrees                : 30deg !default; // used in lightspeed & special modules
+$base-fill-mode              : both !default;
+$base-iteration-count        : infinite !default;
 
-$base-timing-function-in		: ease-in !default;
-$base-timing-function-out		: ease-out !default;
-$base-timing-function-in-out	: ease-in-out !default;
+$base-timing-function-in     : ease-in !default;
+$base-timing-function-out    : ease-out !default;
+$base-timing-function-in-out : ease-in-out !default;
 
-$base-distance					: 10px !default; 		// used in fade, shake and bounce modules
-$base-distance-big				: 1000px !default;       // used in fadeBig and bounce modules
-
-
-// Rotate module settings
-$rotate-degrees 				: 90deg !default;
-$rotate-degrees-max 			: 200deg !default;
-$rotate-origin 					: center center !default;
-
-// Flipper module settings
-$flipper-perspective			: 400px !default;
-$flipper-translate 				: 150px !default;
-$flipper-degrees 				: 10deg !default;
-$flipper-degrees-max 			: 90deg !default;
+$base-distance               : 10px !default; // used in fade, shake and bounce modules
+$base-distance-big           : 1000px !default; // used in fade-big and bounce modules
 
 
-// Hinge module settings
-$hinge-origin 					: top left !default;
-$hinge-degrees-max 				: 80deg !default;
-$hinge-translate 				: 700px !default;
+// Rotate module sett-ings
+$rotate-degrees              : 90deg !default;
+$rotate-degrees-max          : 200deg !default;
+$rotate-origin               : center center !default;
+
+// Flipper module sett-ings
+$flipper-perspective         : 400px !default;
+$flipper-translate           : 150px !default;
+$flipper-degrees             : 10deg !default;
+$flipper-degrees-max         : 90deg !default;
+
+
+// H-inge module sett-ings
+$hinge-origin                : top left !default;
+$hinge-degrees-max           : 80deg !default;
+$hinge-translate             : 700px !default;
 
 
 //==================================================================================================//
-// Module loading                                                                                   //
+// Module load-ing                                                                                   //
 //==================================================================================================//
-// To include an animation module in the compiled css file, simply set it's attribute below to true //
-// (all modules set to false will not be included)                                                  //
-// The idea here is to only load the animations you want to use on a per project basis              //
+// To -include an animation module -in the compiled css file, simpl-y set it's attribute below to true //
+// (all modules set to false will not be -included)                                                  //
+// The idea here is to onl-y load the animations -you want to use on a per project basis              //
 // This helps keep the compiled css file at its leanest                                             //
 //==================================================================================================//
-// Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
+// Hugel-y -influenced and -inspired b-y @csswizardr-y's -inuit.css _vars.scss file                       //
 //==================================================================================================//
 
 // Fade Enter
-$use-fadeIn 			:	false !default;
-$use-fadeInUp 			:	false !default;
-$use-fadeInUpBig 		:	false !default;
-$use-fadeInDown 		:	false !default;
-$use-fadeInDownBig 		:	false !default;
-$use-fadeInLeft 		:	false !default;
-$use-fadeInLeftBig 		:	false !default;
-$use-fadeInRight 		:	false !default;
-$use-fadeInRightBig 	:	false !default;
+$use-fade-in               : false !default;
+$use-fade-in-up            : false !default;
+$use-fade-in-up-big        : false !default;
+$use-fade-in-down          : false !default;
+$use-fade-in-down-big      : false !default;
+$use-fade-in-left          : false !default;
+$use-fade-in-left-big      : false !default;
+$use-fade-in-right         : false !default;
+$use-fade-in-right-big     : false !default;
 
 
-// Fade Exit
-$use-fadeOut			:   false !default;
-$use-fadeOutUp			:	false !default;
-$use-fadeOutUpBig   	:	false !default;
-$use-fadeOutDown		:	false !default;
-$use-fadeOutDownBig 	:	false !default;
-$use-fadeOutLeft		:	false !default;
-$use-fadeOutLeftBig 	:	false !default;
-$use-fadeOutRight		:	false !default;
-$use-fadeOutRightBig	:	false !default;
+// Fade E-xit
+$use-fade-out              : false !default;
+$use-fade-out-up           : false !default;
+$use-fade-out-up-big       : false !default;
+$use-fade-out-down         : false !default;
+$use-fade-out-down-big     : false !default;
+$use-fade-out-left         : false !default;
+$use-fade-out-left-big     : false !default;
+$use-fade-out-right        : false !default;
+$use-fade-out-right-big    : false !default;
 
 
 // Bounce Enter
-$use-bounceIn			:	false !default;
-$use-bounceInUp			: 	false !default;
-$use-bounceInDown 		: 	false !default;
-$use-bounceInLeft 		: 	false !default;
-$use-bounceInRight 		: 	false !default;
+$use-bounce-in             : false !default;
+$use-bounce-in-up          : false !default;
+$use-bounce-in-down        : false !default;
+$use-bounce-in-left        : false !default;
+$use-bounce-in-right       : false !default;
 
 
-// Bounce Exit
-$use-bounceOut			:	false !default;
-$use-bounceOutUp		: 	false !default;
-$use-bounceOutDown 		: 	false !default;
-$use-bounceOutLeft 		: 	false !default;
-$use-bounceOutRight 	: 	false !default;
+// Bounce E-xit
+$use-bounce-out            : false !default;
+$use-bounce-out-up         : false !default;
+$use-bounce-out-down       : false !default;
+$use-bounce-out-left       : false !default;
+$use-bounce-out-right      : false !default;
 
 
 
 // Rotate Enter
-$use-rotateIn 			:	false !default;
-$use-rotateInUpLeft 	: 	false !default;
-$use-rotateInUpRight 	: 	false !default;
-$use-rotateInDownLeft 	: 	false !default;
-$use-rotateInDownRight 	: 	false !default;
+$use-rotate-in             : false !default;
+$use-rotate-in-up-left     : false !default;
+$use-rotate-in-up-right    : false !default;
+$use-rotate-in-down-left   : false !default;
+$use-rotate-in-down-right  : false !default;
 
 
-// Rotate Exit
-$use-rotateOut 			:	false !default;
-$use-rotateOutUpLeft 	: 	false !default;
-$use-rotateOutUpRight 	: 	false !default;
-$use-rotateOutDownLeft 	: 	false !default;
-$use-rotateOutDownRight : 	false !default;
+// Rotate E-xit
+$use-rotate-out            : false !default;
+$use-rotate-out-up-left    : false !default;
+$use-rotate-out-up-right   : false !default;
+$use-rotate-out-down-left  : false !default;
+$use-rotate-out-down-right : false !default;
 
 
 // Slide Enter
-$use-slideIn			:   false !default;
-$use-slideInUp			:   false !default;
-$use-slideInDown		:   false !default;
-$use-slideInLeft		:   false !default;
-$use-slideInRight		:   false !default;
+$use-slide-in              : false !default;
+$use-slide-in-up           : false !default;
+$use-slide-in-down         : false !default;
+$use-slide-in-left         : false !default;
+$use-slide-in-right        : false !default;
 
-// Slide Exit
-$use-slideOut			:   false !default;
-$use-slideOutUp			:   false !default;
-$use-slideOutDown		:   false !default;
-$use-slideOutLeft		:   false !default;
-$use-slideOutRight		:   false !default;
+// Slide E-xit
+$use-slide-out             : false !default;
+$use-slide-out-up          : false !default;
+$use-slide-out-down        : false !default;
+$use-slide-out-left        : false !default;
+$use-slide-out-right       : false !default;
 
 // Flippers
-$use-flip				:	false !default;
-$use-flipInX			:	false !default;
-$use-flipInY			:	false !default;
-$use-flipOutX			:	false !default;
-$use-flipOutY			:	false !default;
+$use-flip                  : false !default;
+$use-flip-in-x             : false !default;
+$use-flip-in-y             : false !default;
+$use-flip-out-x            : false !default;
+$use-flip-out-y            : false !default;
 
 
 // Lightspeed
-$use-lightSpeedIn 		:	false !default;
-$use-lightSpeedOut 		:	false !default;
+$use-lightspeed-in         : false !default;
+$use-lightspeed-out        : false !default;
 
 
 // Attention Seekers
-$use-bounce				:	false !default;
-$use-flash				:	false !default;
-$use-pulse				:	false !default;
-$use-wiggle				:	false !default;
-$use-swing				:	false !default;
-$use-shake				:	false !default;
-$use-tada				:	false !default;
-$use-wobble				:	false !default;
+$use-bounce                : false !default;
+$use-flash                 : false !default;
+$use-pulse                 : false !default;
+$use-wiggle                : false !default;
+$use-sw-ing                : false !default;
+$use-shake                 : false !default;
+$use-tada                  : false !default;
+$use-wobble                : false !default;
 
 
 // Special
-$use-hinge				:	false !default;
-$use-rollIn				: 	false !default;
-$use-rollOut 			:	false !default;
+$use-hinge                 : false !default;
+$use-roll-in               : false !default;
+$use-roll-out              : false !default;
 
 
-// Zoom In
-$use-zoomIn 			:	false !default;
-$use-zoomInDown 		:	false !default;
-$use-zoomInLeft 		:	false !default;
-$use-zoomInRight 		:	false !default;
-$use-zoomInUp 			:	false !default;
+// Zoom -in
+$use-zoom-in               : false !default;
+$use-zoom-in-down          : false !default;
+$use-zoom-in-left          : false !default;
+$use-zoom-in-right         : false !default;
+$use-zoom-in-up            : false !default;
 
 
-// Zoom Out
-$use-zoomOut			:	false !default;
-$use-zoomOutDown		:	false !default;
-$use-zoomOutLeft		:	false !default;
-$use-zoomOutRight		:	false !default;
-$use-zoomOutUp			:	false !default;
+// Zoom -out
+$use-zoom-out              : false !default;
+$use-zoom-out-down         : false !default;
+$use-zoom-out-left         : false !default;
+$use-zoom-out-right        : false !default;
+$use-zoom-out-up           : false !default;
