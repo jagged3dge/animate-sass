@@ -1,6 +1,6 @@
-@if $use-rotateOut-down-right == true {
+@if $use-rotate-out-down-right == true {
 
-  @-webkit-keyframes rotateOut-up-left {
+  @-webkit-keyframes rotate-out-up-left {
     0% {
       -webkit-transform-origin: left bottom;
       -webkit-transform: rotate(0);
@@ -14,7 +14,7 @@
     }
   }
 
-  @-moz-keyframes rotateOut-up-left {
+  @-moz-keyframes rotate-out-up-left {
     0% {
       -moz-transform-origin: left bottom;
       -moz-transform: rotate(0);
@@ -28,7 +28,7 @@
     }
   }
 
-  @-o-keyframes rotateOut-up-left {
+  @-o-keyframes rotate-out-up-left {
     0% {
       -o-transform-origin: left bottom;
       -o-transform: rotate(0);
@@ -42,7 +42,7 @@
     }
   }
 
-  @keyframes rotateOut-up-left {
+  @keyframes rotate-out-up-left {
     0% {
       transform-origin: left bottom;
       transform: rotate(0);
@@ -56,8 +56,8 @@
     }
   }
 
-  .rotateOut-up-left {
-    @include animate-prefixer(animation-name, rotateOut-up-left);
+  .rotate-out-up-left {
+    @include animate-prefixer(animation-name, rotate-out-up-left);
   }
 
 }

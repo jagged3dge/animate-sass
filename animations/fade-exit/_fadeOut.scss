@@ -1,12 +1,12 @@
-@if $use-fadeOut == true {
+@if $use-fade-out == true {
 
-  @include animate-keyframe(fadeOut) {
+  @include animate-keyframe(fade-out) {
     0% {opacity: 1;}
     100% {opacity: 0;}
   }
 
-  .fadeOut {
-    @include animate-prefixer(animation-name, fadeOut);
+  .fade-out {
+    @include animate-prefixer(animation-name, fade-out);
   }
 
 }

@@ -1,6 +1,6 @@
-@if $use-slideOut-right == true {
+@if $use-slide-out-right == true {
 
-  @-webkit-keyframes slideOut-right {
+  @-webkit-keyframes slide-out-right {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       visibility: visible;
@@ -11,7 +11,7 @@
     }
   }
 
-  @keyframes slideOut-right {
+  @keyframes slide-out-right {
     0% {
       transform: translate3d(0, 0, 0);
       visibility: visible;
@@ -22,8 +22,8 @@
     }
   }
 
-  .slideOut-right {
-    @include animate-prefixer(animation-name, slideOut-right);
+  .slide-out-right {
+    @include animate-prefixer(animation-name, slide-out-right);
   }
 
 }

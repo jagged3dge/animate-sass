@@ -1,6 +1,6 @@
-@if $use-slideOut-down == true {
+@if $use-slide-out-down == true {
 
-  @-webkit-keyframes slideOut-down {
+  @-webkit-keyframes slide-out-down {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       visibility: visible;
@@ -11,7 +11,7 @@
     }
   }
 
-  @keyframes slideOut-down {
+  @keyframes slide-out-down {
     0% {
       transform: translate3d(0, 0, 0);
       visibility: visible;
@@ -22,8 +22,8 @@
     }
   }
 
-  .slideOut-down {
-    @include animate-prefixer(animation-name, slideOut-down);
+  .slide-out-down {
+    @include animate-prefixer(animation-name, slide-out-down);
   }
 
 }

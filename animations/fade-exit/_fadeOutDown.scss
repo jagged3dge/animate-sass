@@ -1,6 +1,6 @@
-@if $use-fadeOut-down == true {
+@if $use-fade-out-down == true {
 
-  @-webkit-keyframes fadeOut-down {
+  @-webkit-keyframes fade-out-down {
     0% {
       opacity: 1;
       -webkit-transform: translate-y(0);
@@ -12,7 +12,7 @@
     }
   }
 
-  @-moz-keyframes fadeOut-down {
+  @-moz-keyframes fade-out-down {
     0% {
       opacity: 1;
       -moz-transform: translate-y(0);
@@ -24,7 +24,7 @@
     }
   }
 
-  @-o-keyframes fadeOut-down {
+  @-o-keyframes fade-out-down {
     0% {
       opacity: 1;
       -o-transform: translate-y(0);
@@ -36,7 +36,7 @@
     }
   }
 
-  @keyframes fadeOut-down {
+  @keyframes fade-out-down {
     0% {
       opacity: 1;
       transform: translate-y(0);
@@ -48,7 +48,7 @@
     }
   }
 
-  .fadeOut-down {
-    @include animate-prefixer(animation-name, fadeOut-down);
+  .fade-out-down {
+    @include animate-prefixer(animation-name, fade-out-down);
   }
 }

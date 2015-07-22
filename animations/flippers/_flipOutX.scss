@@ -1,6 +1,6 @@
-@if $use-flipOut-x == true {
+@if $use-flip-out-x == true {
 
-  @-webkit-keyframes flipOut-x {
+  @-webkit-keyframes flip-out-x {
         0% {
             -webkit-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
@@ -11,7 +11,7 @@
         }
     }
 
-    @-moz-keyframes flipOut-x {
+    @-moz-keyframes flip-out-x {
         0% {
             -moz-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
@@ -22,7 +22,7 @@
         }
     }
 
-    @-o-keyframes flipOut-x {
+    @-o-keyframes flip-out-x {
         0% {
             -o-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
@@ -33,7 +33,7 @@
         }
     }
 
-    @keyframes flipOut-x {
+    @keyframes flip-out-x {
         0% {
             transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
@@ -44,8 +44,8 @@
         }
     }
 
-    .flipOut-x {
-      @include animate-prefixer(animation-name, flipOut-x);
+    .flip-out-x {
+      @include animate-prefixer(animation-name, flip-out-x);
       @include animate-prefixer(backface-visibility, visible !important);
     }
 

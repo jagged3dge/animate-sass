@@ -1,8 +1,8 @@
-@if $use-rollOut == true {
+@if $use-roll-out == true {
 
   // originally authored by Nick Pettit - https://github.com/nickpettit/glide
 
-  @-webkit-keyframes rollOut {
+  @-webkit-keyframes roll-out {
     0% {
       opacity: 1;
       -webkit-transform: translate-x(0px) rotate(0deg);
@@ -14,7 +14,7 @@
     }
   }
 
-  @-moz-keyframes rollOut {
+  @-moz-keyframes roll-out {
     0% {
       opacity: 1;
       -moz-transform: translate-x(0px) rotate(0deg);
@@ -26,7 +26,7 @@
     }
   }
 
-  @-o-keyframes rollOut {
+  @-o-keyframes roll-out {
     0% {
       opacity: 1;
       -o-transform: translate-x(0px) rotate(0deg);
@@ -38,7 +38,7 @@
     }
   }
 
-  @keyframes rollOut {
+  @keyframes roll-out {
     0% {
       opacity: 1;
       transform: translate-x(0px) rotate(0deg);
@@ -50,8 +50,8 @@
     }
   }
 
-  .rollOut {
-    @include animate-prefixer(animation-name, rollOut);
+  .roll-out {
+    @include animate-prefixer(animation-name, roll-out);
   }
 
 }

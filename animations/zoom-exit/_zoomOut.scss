@@ -1,6 +1,6 @@
-$animate-name: 'zoomOut';
+$animate-name: 'zoom-out';
 
-@mixin zoomOut($prefix: '') {
+@mixin zoom-out($prefix: '') {
   0% {
     opacity: 1;
   }
@@ -15,22 +15,22 @@ $animate-name: 'zoomOut';
   }
 }
 
-@if $use-zoomOut == true {
+@if $use-zoom-out == true {
 
   @-webkit-keyframes #{$animate-name} {
-    @include zoomOut('-webkit-');
+    @include zoom-out('-webkit-');
   }
 
   @-moz-keyframes #{$animate-name} {
-    @include zoomOut('-moz-');
+    @include zoom-out('-moz-');
   }
 
   @-o-keyframes #{$animate-name} {
-    @include zoomOut('-o-');
+    @include zoom-out('-o-');
   }
 
   @keyframes #{$animate-name} {
-    @include zoomOut();
+    @include zoom-out();
   }
 
   .#{$animate-name} {

@@ -1,6 +1,6 @@
-@if $use-flipOut-y == true {
+@if $use-flip-out-y == true {
 
-  @-webkit-keyframes flipOut-y {
+  @-webkit-keyframes flip-out-y {
     0% {
       -webkit-transform: perspective($flipper-perspective) rotate-y(0deg);
       opacity: 1;
@@ -11,7 +11,7 @@
     }
   }
 
-  @-moz-keyframes flipOut-y {
+  @-moz-keyframes flip-out-y {
     0% {
       -moz-transform: perspective($flipper-perspective) rotate-y(0deg);
       opacity: 1;
@@ -22,7 +22,7 @@
     }
   }
 
-  @-o-keyframes flipOut-y {
+  @-o-keyframes flip-out-y {
     0% {
       -o-transform: perspective($flipper-perspective) rotate-y(0deg);
       opacity: 1;
@@ -33,7 +33,7 @@
     }
   }
 
-  @keyframes flipOut-y {
+  @keyframes flip-out-y {
     0% {
       transform: perspective($flipper-perspective) rotate-y(0deg);
       opacity: 1;
@@ -44,8 +44,8 @@
     }
   }
 
-  .flipOut-y {
+  .flip-out-y {
     @include animate-prefixer(backface-visibility, visible !important);
-    @include animate-prefixer(animation-name, flipOut-y);
+    @include animate-prefixer(animation-name, flip-out-y);
   }
 }

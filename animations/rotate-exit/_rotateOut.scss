@@ -1,6 +1,6 @@
-@if $use-rotateOut == true {
+@if $use-rotate-out == true {
 
-  @-webkit-keyframes rotateOut {
+  @-webkit-keyframes rotate-out {
     0% {
       -webkit-transform-origin: $rotate-origin;
       -webkit-transform: rotate(0);
@@ -14,7 +14,7 @@
     }
   }
 
-  @-moz-keyframes rotateOut {
+  @-moz-keyframes rotate-out {
     0% {
       -moz-transform-origin: $rotate-origin;
       -moz-transform: rotate(0);
@@ -28,7 +28,7 @@
     }
   }
 
-  @-o-keyframes rotateOut {
+  @-o-keyframes rotate-out {
     0% {
       -o-transform-origin: $rotate-origin;
       -o-transform: rotate(0);
@@ -42,7 +42,7 @@
     }
   }
 
-  @keyframes rotateOut {
+  @keyframes rotate-out {
     0% {
       transform-origin: $rotate-origin;
       transform: rotate(0);
@@ -56,8 +56,8 @@
     }
   }
 
-  .rotateOut {
-    @include animate-prefixer(animation-name, rotateOut);
+  .rotate-out {
+    @include animate-prefixer(animation-name, rotate-out);
   }
 
 }

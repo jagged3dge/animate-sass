@@ -1,6 +1,6 @@
-$animate-name: 'zoomOut-left';
+$animate-name: 'zoom-out-left';
 
-@mixin zoomOut-left($prefix: '') {
+@mixin zoom-out-left($prefix: '') {
   40% {
     opacity: 1;
     #{$prefix}transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
@@ -13,22 +13,22 @@ $animate-name: 'zoomOut-left';
   }
 }
 
-@if $use-zoomOut-left == true {
+@if $use-zoom-out-left == true {
 
   @-webkit-keyframes #{$animate-name} {
-    @include zoomOut-left('-webkit-');
+    @include zoom-out-left('-webkit-');
   }
 
   @-moz-keyframes #{$animate-name} {
-    @include zoomOut-left('-moz-');
+    @include zoom-out-left('-moz-');
   }
 
   @-o-keyframes #{$animate-name} {
-    @include zoomOut-left('-o-');
+    @include zoom-out-left('-o-');
   }
 
   @keyframes #{$animate-name} {
-    @include zoomOut-left();
+    @include zoom-out-left();
   }
 
   .#{$animate-name} {

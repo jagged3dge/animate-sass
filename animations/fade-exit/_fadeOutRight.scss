@@ -1,6 +1,6 @@
-@if $use-fadeOut-right == true {
+@if $use-fade-out-right == true {
 
-  @-webkit-keyframes fadeOut-right {
+  @-webkit-keyframes fade-out-right {
     0% {
       opacity: 1;
       -webkit-transform: translate-x(0);
@@ -12,7 +12,7 @@
     }
   }
 
-  @-moz-keyframes fadeOut-right {
+  @-moz-keyframes fade-out-right {
     0% {
       opacity: 1;
       -moz-transform: translate-x(0);
@@ -24,7 +24,7 @@
     }
   }
 
-  @-o-keyframes fadeOut-right {
+  @-o-keyframes fade-out-right {
     0% {
       opacity: 1;
       -o-transform: translate-x(0);
@@ -36,7 +36,7 @@
     }
   }
 
-  @keyframes fadeOut-right {
+  @keyframes fade-out-right {
     0% {
       opacity: 1;
       transform: translate-x(0);
@@ -48,7 +48,7 @@
     }
   }
 
-  .fadeOut-right {
-    @include animate-prefixer(animation-name, fadeOut-right);
+  .fade-out-right {
+    @include animate-prefixer(animation-name, fade-out-right);
   }
 }
