@@ -1,55 +1,55 @@
-@if $use-fadeInUpBig == true {
+@if $use-fade-in-up-big == true {
 
-	@-webkit-keyframes fadeInUpBig {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateY($base-distance-big * 2);
-		}
+  @-webkit-keyframes fade-in-up-big {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate-y($base-distance-big * 2);
+    }
 
-		100% {
-			opacity: 1;
-			-webkit-transform: translateY(0);
-		}
-	}
+    100% {
+      opacity: 1;
+      -webkit-transform: translate-y(0);
+    }
+  }
 
-	@-moz-keyframes fadeInUpBig {
-		0% {
-			opacity: 0;
-			-moz-transform: translateY($base-distance-big * 2);
-		}
+  @-moz-keyframes fade-in-up-big {
+    0% {
+      opacity: 0;
+      -moz-transform: translate-y($base-distance-big * 2);
+    }
 
-		100% {
-			opacity: 1;
-			-moz-transform: translateY(0);
-		}
-	}
+    100% {
+      opacity: 1;
+      -moz-transform: translate-y(0);
+    }
+  }
 
-	@-o-keyframes fadeInUpBig {
-		0% {
-			opacity: 0;
-			-o-transform: translateY($base-distance-big * 2);
-		}
+  @-o-keyframes fade-in-up-big {
+    0% {
+      opacity: 0;
+      -o-transform: translate-y($base-distance-big * 2);
+    }
 
-		100% {
-			opacity: 1;
-			-o-transform: translateY(0);
-		}
-	}
+    100% {
+      opacity: 1;
+      -o-transform: translate-y(0);
+    }
+  }
 
-	@keyframes fadeInUpBig {
-		0% {
-			opacity: 0;
-			transform: translateY($base-distance-big * 2);
-		}
+  @keyframes fade-in-up-big {
+    0% {
+      opacity: 0;
+      transform: translate-y($base-distance-big * 2);
+    }
 
-		100% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
+    100% {
+      opacity: 1;
+      transform: translate-y(0);
+    }
+  }
 
-	.fadeInUpBig {
-		@include animate-prefixer(animation-name, fadeInUpBig);
-	}
+  .fade-in-up-big {
+    @include animate-prefixer(animation-name, fade-in-up-big);
+  }
 
 }

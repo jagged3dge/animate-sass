@@ -1,55 +1,55 @@
-@if $use-fadeOutLeftBig == true {
+@if $use-fadeOut-left-big == true {
 
-	@-webkit-keyframes fadeOutLeftBig {
-		0% {
-			opacity: 1;
-			-webkit-transform: translateX(0);
-		}
+  @-webkit-keyframes fadeOut-left-big {
+    0% {
+      opacity: 1;
+      -webkit-transform: translate-x(0);
+    }
 
-		100% {
-			opacity: 0;
-			-webkit-transform: translateX(-$base-distance-big * 2);
-		}
-	}
+    100% {
+      opacity: 0;
+      -webkit-transform: translate-x(-$base-distance-big * 2);
+    }
+  }
 
-	@-moz-keyframes fadeOutLeftBig {
-		0% {
-			opacity: 1;
-			-moz-transform: translateX(0);
-		}
+  @-moz-keyframes fadeOut-left-big {
+    0% {
+      opacity: 1;
+      -moz-transform: translate-x(0);
+    }
 
-		100% {
-			opacity: 0;
-			-moz-transform: translateX(-$base-distance-big * 2);
-		}
-	}
+    100% {
+      opacity: 0;
+      -moz-transform: translate-x(-$base-distance-big * 2);
+    }
+  }
 
-	@-o-keyframes fadeOutLeftBig {
-		0% {
-			opacity: 1;
-			-o-transform: translateX(0);
-		}
+  @-o-keyframes fadeOut-left-big {
+    0% {
+      opacity: 1;
+      -o-transform: translate-x(0);
+    }
 
-		100% {
-			opacity: 0;
-			-o-transform: translateX(-$base-distance-big * 2);
-		}
-	}
+    100% {
+      opacity: 0;
+      -o-transform: translate-x(-$base-distance-big * 2);
+    }
+  }
 
-	@keyframes fadeOutLeftBig {
-		0% {
-			opacity: 1;
-			transform: translateX(0);
-		}
+  @keyframes fadeOut-left-big {
+    0% {
+      opacity: 1;
+      transform: translate-x(0);
+    }
 
-		100% {
-			opacity: 0;
-			transform: translateX(-$base-distance-big * 2);
-		}
-	}
+    100% {
+      opacity: 0;
+      transform: translate-x(-$base-distance-big * 2);
+    }
+  }
 
-	.fadeOutLeftBig {
-		@include animate-prefixer(animation-name, fadeOutLeftBig);
-	}
+  .fadeOut-left-big {
+    @include animate-prefixer(animation-name, fadeOut-left-big);
+  }
 
 }

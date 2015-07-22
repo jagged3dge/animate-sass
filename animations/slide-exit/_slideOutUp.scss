@@ -1,29 +1,29 @@
-@if $use-slideOutUp == true {
+@if $use-slideOut-up == true {
 
-	@-webkit-keyframes slideOutUp {
-		0% {
-			-webkit-transform: translate3d(0, 0, 0);
-			visibility: visible;
-		}
+  @-webkit-keyframes slideOut-up {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
 
-		100% {
-			-webkit-transform: translate3d(0, -100%, 0);
-		}
-	}
+    100% {
+      -webkit-transform: translate3d(0, -100%, 0);
+    }
+  }
 
-	@keyframes slideOutUp {
-		0% {
-			transform: translate3d(0, 0, 0);
-			visibility: visible;
-		}
+  @keyframes slideOut-up {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
 
-		100% {
-			transform: translate3d(0, -100%, 0);
-		}
-	}
+    100% {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
 
-	.slideOutUp {
-		@include animate-prefixer(animation-name, slideOutUp);
-	}
+  .slideOut-up {
+    @include animate-prefixer(animation-name, slideOut-up);
+  }
 
 }

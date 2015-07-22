@@ -1,52 +1,52 @@
-@if $use-flipOutX == true {
+@if $use-flipOut-x == true {
 
-	@-webkit-keyframes flipOutX {
+  @-webkit-keyframes flipOut-x {
         0% {
-            -webkit-transform: perspective($flipper-perspective) rotateX(0deg);
+            -webkit-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
         }
-    	100% {
-            -webkit-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+      100% {
+            -webkit-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
             opacity: 0;
         }
     }
 
-    @-moz-keyframes flipOutX {
+    @-moz-keyframes flipOut-x {
         0% {
-            -moz-transform: perspective($flipper-perspective) rotateX(0deg);
+            -moz-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
         }
-    	100% {
-            -moz-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+      100% {
+            -moz-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
             opacity: 0;
         }
     }
 
-    @-o-keyframes flipOutX {
+    @-o-keyframes flipOut-x {
         0% {
-            -o-transform: perspective($flipper-perspective) rotateX(0deg);
+            -o-transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
         }
-    	100% {
-            -o-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+      100% {
+            -o-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
             opacity: 0;
         }
     }
 
-    @keyframes flipOutX {
+    @keyframes flipOut-x {
         0% {
-            transform: perspective($flipper-perspective) rotateX(0deg);
+            transform: perspective($flipper-perspective) rotate-x(0deg);
             opacity: 1;
         }
-    	100% {
-            transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+      100% {
+            transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
             opacity: 0;
         }
     }
 
-    .flipOutX {
-    	@include animate-prefixer(animation-name, flipOutX);
-    	@include animate-prefixer(backface-visibility, visible !important);
+    .flipOut-x {
+      @include animate-prefixer(animation-name, flipOut-x);
+      @include animate-prefixer(backface-visibility, visible !important);
     }
 
 }

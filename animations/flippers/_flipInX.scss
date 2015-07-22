@@ -1,84 +1,84 @@
-@if $use-flipInX == true {
+@if $use-flip-in-x == true {
 
-	@-webkit-keyframes flipInX {
+  @-webkit-keyframes flip-in-x {
     0% {
-        -webkit-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+        -webkit-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
         opacity: 0;
     }
 
     40% {
-        -webkit-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
+        -webkit-transform: perspective($flipper-perspective) rotate-x(-$flipper-degrees);
     }
 
     70% {
-        -webkit-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
+        -webkit-transform: perspective($flipper-perspective) rotate-x($flipper-degrees);
     }
 
     100% {
-        -webkit-transform: perspective($flipper-perspective) rotateX(0deg);
+        -webkit-transform: perspective($flipper-perspective) rotate-x(0deg);
         opacity: 1;
     }
 }
-@-moz-keyframes flipInX {
+@-moz-keyframes flip-in-x {
     0% {
-        -moz-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+        -moz-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
         opacity: 0;
     }
 
     40% {
-        -moz-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
+        -moz-transform: perspective($flipper-perspective) rotate-x(-$flipper-degrees);
     }
 
     70% {
-        -moz-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
+        -moz-transform: perspective($flipper-perspective) rotate-x($flipper-degrees);
     }
 
     100% {
-        -moz-transform: perspective($flipper-perspective) rotateX(0deg);
+        -moz-transform: perspective($flipper-perspective) rotate-x(0deg);
         opacity: 1;
     }
 }
-@-o-keyframes flipInX {
+@-o-keyframes flip-in-x {
     0% {
-        -o-transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+        -o-transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
         opacity: 0;
     }
 
     40% {
-        -o-transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
+        -o-transform: perspective($flipper-perspective) rotate-x(-$flipper-degrees);
     }
 
     70% {
-        -o-transform: perspective($flipper-perspective) rotateX($flipper-degrees);
+        -o-transform: perspective($flipper-perspective) rotate-x($flipper-degrees);
     }
 
     100% {
-        -o-transform: perspective($flipper-perspective) rotateX(0deg);
+        -o-transform: perspective($flipper-perspective) rotate-x(0deg);
         opacity: 1;
     }
 }
-@keyframes flipInX {
+@keyframes flip-in-x {
     0% {
-        transform: perspective($flipper-perspective) rotateX($flipper-degrees-max);
+        transform: perspective($flipper-perspective) rotate-x($flipper-degrees-max);
         opacity: 0;
     }
 
     40% {
-        transform: perspective($flipper-perspective) rotateX(-$flipper-degrees);
+        transform: perspective($flipper-perspective) rotate-x(-$flipper-degrees);
     }
 
     70% {
-        transform: perspective($flipper-perspective) rotateX($flipper-degrees);
+        transform: perspective($flipper-perspective) rotate-x($flipper-degrees);
     }
 
     100% {
-        transform: perspective($flipper-perspective) rotateX(0deg);
+        transform: perspective($flipper-perspective) rotate-x(0deg);
         opacity: 1;
     }
 }
 
-.flipInX {
-	@include animate-prefixer(backface-visibility, visible !important);
-	@include animate-prefixer(animation-name, flipInX);
+.flip-in-x {
+  @include animate-prefixer(backface-visibility, visible !important);
+  @include animate-prefixer(animation-name, flip-in-x);
 }
 }

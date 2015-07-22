@@ -1,87 +1,87 @@
-@if $use-flipInY == true {
+@if $use-flip-in-y == true {
 
-	@-webkit-keyframes flipInY {
-		0% {
-			-webkit-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
+  @-webkit-keyframes flip-in-y {
+    0% {
+      -webkit-transform: perspective($flipper-perspective) rotate-y($flipper-degrees-max);
+      opacity: 0;
+    }
 
-		40% {
-			-webkit-transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
+    40% {
+      -webkit-transform: perspective($flipper-perspective) rotate-y(-$flipper-degrees);
+    }
 
-		70% {
-			-webkit-transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
+    70% {
+      -webkit-transform: perspective($flipper-perspective) rotate-y($flipper-degrees);
+    }
 
-		100% {
-			-webkit-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
+    100% {
+      -webkit-transform: perspective($flipper-perspective) rotate-y(0deg);
+      opacity: 1;
+    }
+  }
 
-	@-moz-keyframes flipInY {
-		0% {
-			-moz-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
+  @-moz-keyframes flip-in-y {
+    0% {
+      -moz-transform: perspective($flipper-perspective) rotate-y($flipper-degrees-max);
+      opacity: 0;
+    }
 
-		40% {
-			-moz-transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
+    40% {
+      -moz-transform: perspective($flipper-perspective) rotate-y(-$flipper-degrees);
+    }
 
-		70% {
-			-moz-transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
+    70% {
+      -moz-transform: perspective($flipper-perspective) rotate-y($flipper-degrees);
+    }
 
-		100% {
-			-moz-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
+    100% {
+      -moz-transform: perspective($flipper-perspective) rotate-y(0deg);
+      opacity: 1;
+    }
+  }
 
-	@-o-keyframes flipInY {
-		0% {
-			-o-transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
+  @-o-keyframes flip-in-y {
+    0% {
+      -o-transform: perspective($flipper-perspective) rotate-y($flipper-degrees-max);
+      opacity: 0;
+    }
 
-		40% {
-			-o-transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
+    40% {
+      -o-transform: perspective($flipper-perspective) rotate-y(-$flipper-degrees);
+    }
 
-		70% {
-			-o-transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
+    70% {
+      -o-transform: perspective($flipper-perspective) rotate-y($flipper-degrees);
+    }
 
-		100% {
-			-o-transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
+    100% {
+      -o-transform: perspective($flipper-perspective) rotate-y(0deg);
+      opacity: 1;
+    }
+  }
 
-	@keyframes flipInY {
-		0% {
-			transform: perspective($flipper-perspective) rotateY($flipper-degrees-max);
-			opacity: 0;
-		}
+  @keyframes flip-in-y {
+    0% {
+      transform: perspective($flipper-perspective) rotate-y($flipper-degrees-max);
+      opacity: 0;
+    }
 
-		40% {
-			transform: perspective($flipper-perspective) rotateY(-$flipper-degrees);
-		}
+    40% {
+      transform: perspective($flipper-perspective) rotate-y(-$flipper-degrees);
+    }
 
-		70% {
-			transform: perspective($flipper-perspective) rotateY($flipper-degrees);
-		}
+    70% {
+      transform: perspective($flipper-perspective) rotate-y($flipper-degrees);
+    }
 
-		100% {
-			transform: perspective($flipper-perspective) rotateY(0deg);
-			opacity: 1;
-		}
-	}
+    100% {
+      transform: perspective($flipper-perspective) rotate-y(0deg);
+      opacity: 1;
+    }
+  }
 
-	.flipInY {
-		@include animate-prefixer(backface-visibility, visible !important);
-		@include animate-prefixer(animation-name, flipInY);
-	}
+  .flip-in-y {
+    @include animate-prefixer(backface-visibility, visible !important);
+    @include animate-prefixer(animation-name, flip-in-y);
+  }
 }

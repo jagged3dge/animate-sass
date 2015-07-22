@@ -1,29 +1,29 @@
-@if $use-slideInUp == true {
+@if $use-slide-in-up == true {
 
-	@-webkit-keyframes slideInUp {
-		0% {
-			-webkit-transform: translate3d(0, 100%, 0);
-			visibility: visible;
-		}
+  @-webkit-keyframes slide-in-up {
+    0% {
+      -webkit-transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
 
-		100% {
-			-webkit-transform: translate3d(0, 0, 0);
-		}
-	}
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
 
-	@keyframes slideInUp {
-		0% {
-			transform: translate3d(0, 100%, 0);
-			visibility: visible;
-		}
+  @keyframes slide-in-up {
+    0% {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
 
-		100% {
-			transform: translate3d(0, 0, 0);
-		}
-	}
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 
-	.slideInUp {
-		@include animate-prefixer(animation-name, slideInUp);
-	}
+  .slide-in-up {
+    @include animate-prefixer(animation-name, slide-in-up);
+  }
 
 }

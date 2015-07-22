@@ -1,62 +1,62 @@
-@if $use-rotateOutDownRight == true {
+@if $use-rotateOut-down-right == true {
 
-	@-webkit-keyframes rotateOutDownRight {
-		0% {
-			-webkit-transform-origin: right bottom;
-			-webkit-transform: rotate(0);
-			opacity: 1;
-		}
+  @-webkit-keyframes rotateOut-down-right {
+    0% {
+      -webkit-transform-origin: right bottom;
+      -webkit-transform: rotate(0);
+      opacity: 1;
+    }
 
-		100% {
-			-webkit-transform-origin: right bottom;
-			-webkit-transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
+    100% {
+      -webkit-transform-origin: right bottom;
+      -webkit-transform: rotate(-$rotate-degrees);
+      opacity: 0;
+    }
+  }
 
-	@-moz-keyframes rotateOutDownRight {
-		0% {
-			-moz-transform-origin: right bottom;
-			-moz-transform: rotate(0);
-			opacity: 1;
-		}
+  @-moz-keyframes rotateOut-down-right {
+    0% {
+      -moz-transform-origin: right bottom;
+      -moz-transform: rotate(0);
+      opacity: 1;
+    }
 
-		100% {
-			-moz-transform-origin: right bottom;
-			-moz-transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
+    100% {
+      -moz-transform-origin: right bottom;
+      -moz-transform: rotate(-$rotate-degrees);
+      opacity: 0;
+    }
+  }
 
-	@-o-keyframes rotateOutDownRight {
-		0% {
-			-o-transform-origin: right bottom;
-			-o-transform: rotate(0);
-			opacity: 1;
-		}
+  @-o-keyframes rotateOut-down-right {
+    0% {
+      -o-transform-origin: right bottom;
+      -o-transform: rotate(0);
+      opacity: 1;
+    }
 
-		100% {
-			-o-transform-origin: right bottom;
-			-o-transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
+    100% {
+      -o-transform-origin: right bottom;
+      -o-transform: rotate(-$rotate-degrees);
+      opacity: 0;
+    }
+  }
 
-	@keyframes rotateOutDownRight {
-		0% {
-			transform-origin: right bottom;
-			transform: rotate(0);
-			opacity: 1;
-		}
+  @keyframes rotateOut-down-right {
+    0% {
+      transform-origin: right bottom;
+      transform: rotate(0);
+      opacity: 1;
+    }
 
-		100% {
-			transform-origin: right bottom;
-			transform: rotate(-$rotate-degrees);
-			opacity: 0;
-		}
-	}
+    100% {
+      transform-origin: right bottom;
+      transform: rotate(-$rotate-degrees);
+      opacity: 0;
+    }
+  }
 
-	.rotateOutDownRight {
-		@include animate-prefixer(animation-name, rotateOutDownRight);
-	}
+  .rotateOut-down-right {
+    @include animate-prefixer(animation-name, rotateOut-down-right);
+  }
 }
