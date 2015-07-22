@@ -1,27 +1,27 @@
-@if $use-lightSpeed-out == true {
+@if $use-lightspeed-out == true {
 
-  @-webkit-keyframes lightSpeed-out {
-    0% { -webkit-transform: translate-x(0%) skew-x(0deg); opacity: 1; }
-    100% { -webkit-transform: translate-x(100%) skew-x(-$base-degrees); opacity: 0; }
+  @-webkit-keyframes lightspeed-out {
+    0% { opacity: 1; -webkit-transform: translate-x(0%) skew-x(0deg); }
+    100% { opacity: 0; -webkit-transform: translate-x(100%) skew-x(-$base-degrees); }
   }
 
-  @-moz-keyframes lightSpeed-out {
-    0% { -moz-transform: translate-x(0%) skew-x(0deg); opacity: 1; }
-    100% { -moz-transform: translate-x(100%) skew-x(-$base-degrees); opacity: 0; }
+  @-moz-keyframes lightspeed-out {
+    0% { opacity: 1; -moz-transform: translate-x(0%) skew-x(0deg); }
+    100% { opacity: 0; -moz-transform: translate-x(100%) skew-x(-$base-degrees); }
   }
 
-  @-o-keyframes lightSpeed-out {
-    0% { -o-transform: translate-x(0%) skew-x(0deg); opacity: 1; }
-    100% { -o-transform: translate-x(100%) skew-x(-$base-degrees); opacity: 0; }
+  @-o-keyframes lightspeed-out {
+    0% { opacity: 1; -o-transform: translate-x(0%) skew-x(0deg); }
+    100% { opacity: 0; -o-transform: translate-x(100%) skew-x(-$base-degrees); }
   }
 
-  @keyframes lightSpeed-out {
-    0% { transform: translate-x(0%) skew-x(0deg); opacity: 1; }
-    100% { transform: translate-x(100%) skew-x(-$base-degrees); opacity: 0; }
+  @keyframes lightspeed-out {
+    0% { opacity: 1; transform: translate-x(0%) skew-x(0deg); }
+    100% { opacity: 0; transform: translate-x(100%) skew-x(-$base-degrees); }
   }
 
-  .lightSpeed-out {
-    @include animate-prefixer(animation-name, lightSpeed-out);
+  .lightspeed-out {
+    @include animate-prefixer(animation-name, lightspeed-out);
     @include animate-prefixer(animation-timing-function, $base-timing-function-in);
   }
 }
