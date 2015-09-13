@@ -1,31 +1,31 @@
 @if $use-lightspeed-in == true {
 
   @-webkit-keyframes lightspeed-in {
-    0% { opacity: 0; -webkit-transform: translate-x(100%) skew-x(-$base-degrees); }
-    60% { opacity: 1; -webkit-transform: translate-x(-20%) skew-x($base-degrees); }
-    80% { opacity: 1; -webkit-transform: translate-x(0%) skew-x(-$base-degrees / 2); }
-    100% { opacity: 1; -webkit-transform: translate-x(0%) skew-x(0deg); }
+    0% { opacity: 0; -webkit-transform: translateX(100%) skew-x(-$base-degrees); }
+    60% { opacity: 1; -webkit-transform: translateX(-20%) skew-x($base-degrees); }
+    80% { opacity: 1; -webkit-transform: translateX(0%) skew-x(-$base-degrees / 2); }
+    100% { opacity: 1; -webkit-transform: translateX(0%) skew-x(0deg); }
   }
 
   @-moz-keyframes lightspeed-in {
-    0% { opacity: 0; -moz-transform: translate-x(100%) skew-x(-$base-degrees); }
-    60% { opacity: 1; -moz-transform: translate-x(-20%) skew-x($base-degrees); }
-    80% { opacity: 1; -moz-transform: translate-x(0%) skew-x(-$base-degrees / 2); }
-    100% { opacity: 1; -moz-transform: translate-x(0%) skew-x(0deg); }
+    0% { opacity: 0; -moz-transform: translateX(100%) skew-x(-$base-degrees); }
+    60% { opacity: 1; -moz-transform: translateX(-20%) skew-x($base-degrees); }
+    80% { opacity: 1; -moz-transform: translateX(0%) skew-x(-$base-degrees / 2); }
+    100% { opacity: 1; -moz-transform: translateX(0%) skew-x(0deg); }
   }
 
   @-o-keyframes lightspeed-in {
-    0% { opacity: 0; -o-transform: translate-x(100%) skew-x(-$base-degrees); }
-    60% { opacity: 1; -o-transform: translate-x(-20%) skew-x($base-degrees); }
-    80% { opacity: 1; -o-transform: translate-x(0%) skew-x(-$base-degrees / 2); }
-    100% { opacity: 1; -o-transform: translate-x(0%) skew-x(0deg); }
+    0% { opacity: 0; -o-transform: translateX(100%) skew-x(-$base-degrees); }
+    60% { opacity: 1; -o-transform: translateX(-20%) skew-x($base-degrees); }
+    80% { opacity: 1; -o-transform: translateX(0%) skew-x(-$base-degrees / 2); }
+    100% { opacity: 1; -o-transform: translateX(0%) skew-x(0deg); }
   }
 
   @keyframes lightspeed-in {
-    0% { opacity: 0; transform: translate-x(100%) skew-x(-$base-degrees); }
-    60% { opacity: 1; transform: translate-x(-20%) skew-x($base-degrees); }
-    80% { opacity: 1; transform: translate-x(0%) skew-x(-$base-degrees / 2); }
-    100% { opacity: 1; transform: translate-x(0%) skew-x(0deg); }
+    0% { opacity: 0; transform: translateX(100%) skew-x(-$base-degrees); }
+    60% { opacity: 1; transform: translateX(-20%) skew-x($base-degrees); }
+    80% { opacity: 1; transform: translateX(0%) skew-x(-$base-degrees / 2); }
+    100% { opacity: 1; transform: translateX(0%) skew-x(0deg); }
   }
 
   .lightspeed-in {
